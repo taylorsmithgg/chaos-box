@@ -1,0 +1,21 @@
+<template name="products">
+  {{>productGrid}}
+</template>
+
+<template name="productListGrid">
+  <div class="row">
+    {{>productGrid}}
+    {{#if userHasRole "admin"}}
+      {{>productList}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="addProductLinks">
+{{#if userHasRole "admin"}}
+  <div class="dropdown-apps-icon">
+    <a id="add-product-link" title="{{i18n 'createProductIcon.iconTitle'}}"><i class="add-product-link fa fa-plus"></i></a>
+    <span class="icon-text" data-i18n="createProductIcon.text">Create</span>
+  </div>
+{{/if}}
+</template>
