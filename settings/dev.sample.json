@@ -1,0 +1,22 @@
+{
+ "isDebug": "info",
+  "baseUrl": "http://localhost:3000",
+  "googleAnalyticsProperty": "",
+  "facebook": {
+    "secret": ""
+  },
+  "reaction": {
+    "METEOR_USER": "Administrator",
+    "METEOR_AUTH": "admin",
+    "METEOR_EMAIL": "root@localhost"
+  },
+  "paypal": {
+    "client_id": "",
+    "client_secret": ""
+  },
+  "public": {
+    "facebook": {
+      "appId": ""
+    }
+  }
+}
