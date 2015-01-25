@@ -2,9 +2,9 @@
   "name": "reaction",
   "description": "reaction - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
   "version": "0.0.1",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node main.js"
   },
   "engines": {
     "node": "0.10.33"
