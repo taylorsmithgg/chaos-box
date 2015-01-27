@@ -2,22 +2,22 @@
   "format": "web-program-pre1",
   "manifest": [
     {
-      "path": "7e9520599dd2f36a8715347d00cde4accf5a77e1.js",
+      "path": "6a9c5bea0b8c611374dd6929dfd9aa6ceeb44953.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/7e9520599dd2f36a8715347d00cde4accf5a77e1.js",
-      "size": 1899881,
-      "hash": "7e9520599dd2f36a8715347d00cde4accf5a77e1"
+      "url": "/6a9c5bea0b8c611374dd6929dfd9aa6ceeb44953.js",
+      "size": 1912627,
+      "hash": "6a9c5bea0b8c611374dd6929dfd9aa6ceeb44953"
     },
     {
-      "path": "4893748b3c33ddbfc3e162add022d7af88dbd519.css",
+      "path": "6f7e30354762cf5f2f2a2939479bd98038a47c22.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/4893748b3c33ddbfc3e162add022d7af88dbd519.css?meteor_css_resource=true",
-      "size": 316388,
-      "hash": "4893748b3c33ddbfc3e162add022d7af88dbd519"
+      "url": "/6f7e30354762cf5f2f2a2939479bd98038a47c22.css?meteor_css_resource=true",
+      "size": 316869,
+      "hash": "6f7e30354762cf5f2f2a2939479bd98038a47c22"
     },
     {
       "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.eot",
@@ -119,6 +119,15 @@
       "hash": "315a1415596a5f7b5f738a23200f086c89a52c3b"
     },
     {
+      "path": "app/img/background.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/background.mp4",
+      "size": 3161217,
+      "hash": "5c5b8cfc3fac59e3e3a6641046b4c7ae643c78fa"
+    },
+    {
       "path": "app/img/banner.jpg",
       "where": "client",
       "type": "asset",
@@ -162,6 +171,15 @@
       "url": "/img/chaosbox.jpg",
       "size": 44659,
       "hash": "d52b9882582de10d5f7a56c8342d93d2c115e70a"
+    },
+    {
+      "path": "app/img/chasethevape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/chasethevape.png",
+      "size": 74439,
+      "hash": "0e9d8167dec4c4856ad90cbf44f359e3ce003e22"
     },
     {
       "path": "app/img/contact-sep.jpg",
@@ -317,6 +335,15 @@
       "hash": "7e90151efe1b693e280fde290348f980a35469c5"
     },
     {
+      "path": "app/img/spread.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/spread.jpg",
+      "size": 97215,
+      "hash": "6e7a8e9ca9b68b67e632e434c73268695647248b"
+    },
+    {
       "path": "app/img/symbol.png",
       "where": "client",
       "type": "asset",
@@ -335,6 +362,15 @@
       "hash": "826d4e58fb99fd58c0b142413e7642b7e20b8b19"
     },
     {
+      "path": "app/img/vapeescape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/vapeescape.png",
+      "size": 43938,
+      "hash": "2fe98f18ae074ddb0c9d7f799a47db92407a1ba0"
+    },
+    {
       "path": "app/img/vaporwize.png",
       "where": "client",
       "type": "asset",
@@ -351,6 +387,15 @@
       "url": "/img/wolfrivervapor.jpg",
       "size": 154558,
       "hash": "bb39179c4c53dfa7cd7ce26ca49c8c0393ff29a1"
+    },
+    {
+      "path": "app/img/zooks.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/zooks.jpg",
+      "size": 8998,
+      "hash": "12ebd4b2db3d108a538e6b6a9f87e988686bd1da"
     },
     {
       "path": "app/img/zoom.png",

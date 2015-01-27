@@ -783,6 +783,12 @@
       "path": "packages/noorderstorm_stellar.js"
     },
     {
+      "node_modules": "npm/reactioncommerce:reaction-auth-net/node_modules",
+      "sourceMap": "packages/reactioncommerce_reaction-auth-net.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/reactioncommerce_reaction-auth-net.js"
+    },
+    {
       "path": "packages/global-imports.js"
     },
     {

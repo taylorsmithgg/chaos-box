@@ -2,9 +2,9 @@
   "name": "reaction",
   "description": "reaction - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
   "version": "0.0.1",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node main.js"
   },
   "engines": {
     "node": "0.10.33"
@@ -115,6 +115,7 @@
     "source-map-support": "0.2.8",
     "underscore": "1.5.2",
     "braintree": "https://registry.npmjs.org/braintree/-/braintree-1.15.0.tgz",
+    "paynode": "https://registry.npmjs.org/paynode/-/paynode-0.3.6.tgz",
     "buffer-crc32": "0.2.1",
     "paypal-rest-sdk": "https://registry.npmjs.org/paypal-rest-sdk/-/paypal-rest-sdk-1.2.2.tgz",
     "lodash": "^2.4.1",
