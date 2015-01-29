@@ -45,7 +45,7 @@ var Iron = Package['iron:core'].Iron;
 var FS = Package['cfs:base-package'].FS;
 
 /* Package-scope variables */
-var ReactionCore, currentProduct, ShopController, Products, Cart, Tags, Alerts, Schemas, __coffeescriptShare;
+var ReactionCore, currentProduct, ShopController, Products, Cart, Tags, exports, Alerts, Schemas, __coffeescriptShare;
 
 (function () {
 
@@ -59,18 +59,18 @@ var ReactionCore, currentProduct, ShopController, Products, Cart, Tags, Alerts, 
                                                                                                                     // 2
   Javascript State Machine Library - https://github.com/jakesgordon/javascript-state-machine                        // 3
                                                                                                                     // 4
-  Copyright (c) 2012, 2013 Jake Gordon and contributors                                                             // 5
+  Copyright (c) 2012, 2013, 2014, 2015, Jake Gordon and contributors                                                // 5
   Released under the MIT license - https://github.com/jakesgordon/javascript-state-machine/blob/master/LICENSE      // 6
                                                                                                                     // 7
 */                                                                                                                  // 8
                                                                                                                     // 9
-(function (window) {                                                                                                // 10
+(function () {                                                                                                      // 10
                                                                                                                     // 11
   var StateMachine = {                                                                                              // 12
                                                                                                                     // 13
     //---------------------------------------------------------------------------                                   // 14
                                                                                                                     // 15
-    VERSION: "2.2.0",                                                                                               // 16
+    VERSION: "2.3.5",                                                                                               // 16
                                                                                                                     // 17
     //---------------------------------------------------------------------------                                   // 18
                                                                                                                     // 19
@@ -94,170 +94,195 @@ var ReactionCore, currentProduct, ShopController, Products, Cart, Tags, Alerts, 
                                                                                                                     // 37
     create: function(cfg, target) {                                                                                 // 38
                                                                                                                     // 39
-      var initial   = (typeof cfg.initial == 'string') ? { state: cfg.initial } : cfg.initial; // allow for a simple string, or an object with { state: 'foo', event: 'setup', defer: true|false }
-      var terminal  = cfg.terminal || cfg['final'];                                                                 // 41
-      var fsm       = target || cfg.target  || {};                                                                  // 42
-      var events    = cfg.events || [];                                                                             // 43
-      var callbacks = cfg.callbacks || {};                                                                          // 44
-      var map       = {};                                                                                           // 45
-                                                                                                                    // 46
-      var add = function(e) {                                                                                       // 47
+      var initial      = (typeof cfg.initial == 'string') ? { state: cfg.initial } : cfg.initial; // allow for a simple string, or an object with { state: 'foo', event: 'setup', defer: true|false }
+      var terminal     = cfg.terminal || cfg['final'];                                                              // 41
+      var fsm          = target || cfg.target  || {};                                                               // 42
+      var events       = cfg.events || [];                                                                          // 43
+      var callbacks    = cfg.callbacks || {};                                                                       // 44
+      var map          = {}; // track state transitions allowed for an event { event: { from: [ to ] } }            // 45
+      var transitions  = {}; // track events allowed from a state            { state: [ event ] }                   // 46
+                                                                                                                    // 47
+      var add = function(e) {                                                                                       // 48
         var from = (e.from instanceof Array) ? e.from : (e.from ? [e.from] : [StateMachine.WILDCARD]); // allow 'wildcard' transition if 'from' is not specified
-        map[e.name] = map[e.name] || {};                                                                            // 49
-        for (var n = 0 ; n < from.length ; n++)                                                                     // 50
-          map[e.name][from[n]] = e.to || from[n]; // allow no-op transition if 'to' is not specified                // 51
-      };                                                                                                            // 52
-                                                                                                                    // 53
-      if (initial) {                                                                                                // 54
-        initial.event = initial.event || 'startup';                                                                 // 55
-        add({ name: initial.event, from: 'none', to: initial.state });                                              // 56
-      }                                                                                                             // 57
+        map[e.name] = map[e.name] || {};                                                                            // 50
+        for (var n = 0 ; n < from.length ; n++) {                                                                   // 51
+          transitions[from[n]] = transitions[from[n]] || [];                                                        // 52
+          transitions[from[n]].push(e.name);                                                                        // 53
+                                                                                                                    // 54
+          map[e.name][from[n]] = e.to || from[n]; // allow no-op transition if 'to' is not specified                // 55
+        }                                                                                                           // 56
+      };                                                                                                            // 57
                                                                                                                     // 58
-      for(var n = 0 ; n < events.length ; n++)                                                                      // 59
-        add(events[n]);                                                                                             // 60
-                                                                                                                    // 61
-      for(var name in map) {                                                                                        // 62
-        if (map.hasOwnProperty(name))                                                                               // 63
-          fsm[name] = StateMachine.buildEvent(name, map[name]);                                                     // 64
-      }                                                                                                             // 65
+      if (initial) {                                                                                                // 59
+        initial.event = initial.event || 'startup';                                                                 // 60
+        add({ name: initial.event, from: 'none', to: initial.state });                                              // 61
+      }                                                                                                             // 62
+                                                                                                                    // 63
+      for(var n = 0 ; n < events.length ; n++)                                                                      // 64
+        add(events[n]);                                                                                             // 65
                                                                                                                     // 66
-      for(var name in callbacks) {                                                                                  // 67
-        if (callbacks.hasOwnProperty(name))                                                                         // 68
-          fsm[name] = callbacks[name]                                                                               // 69
+      for(var name in map) {                                                                                        // 67
+        if (map.hasOwnProperty(name))                                                                               // 68
+          fsm[name] = StateMachine.buildEvent(name, map[name]);                                                     // 69
       }                                                                                                             // 70
                                                                                                                     // 71
-      fsm.current = 'none';                                                                                         // 72
-      fsm.is      = function(state) { return (state instanceof Array) ? (state.indexOf(this.current) >= 0) : (this.current === state); };
-      fsm.can     = function(event) { return !this.transition && (map[event].hasOwnProperty(this.current) || map[event].hasOwnProperty(StateMachine.WILDCARD)); }
-      fsm.cannot  = function(event) { return !this.can(event); };                                                   // 75
-      fsm.error   = cfg.error || function(name, from, to, args, error, msg, e) { throw e || msg; }; // default behavior when something unexpected happens is to throw an exception, but caller can override this behavior if desired (see github issue #3 and #17)
-                                                                                                                    // 77
-      fsm.isFinished = function() { return this.is(terminal); };                                                    // 78
-                                                                                                                    // 79
-      if (initial && !initial.defer)                                                                                // 80
-        fsm[initial.event]();                                                                                       // 81
-                                                                                                                    // 82
-      return fsm;                                                                                                   // 83
+      for(var name in callbacks) {                                                                                  // 72
+        if (callbacks.hasOwnProperty(name))                                                                         // 73
+          fsm[name] = callbacks[name]                                                                               // 74
+      }                                                                                                             // 75
+                                                                                                                    // 76
+      fsm.current     = 'none';                                                                                     // 77
+      fsm.is          = function(state) { return (state instanceof Array) ? (state.indexOf(this.current) >= 0) : (this.current === state); };
+      fsm.can         = function(event) { return !this.transition && (map[event].hasOwnProperty(this.current) || map[event].hasOwnProperty(StateMachine.WILDCARD)); }
+      fsm.cannot      = function(event) { return !this.can(event); };                                               // 80
+      fsm.transitions = function()      { return transitions[this.current]; };                                      // 81
+      fsm.isFinished  = function()      { return this.is(terminal); };                                              // 82
+      fsm.error       = cfg.error || function(name, from, to, args, error, msg, e) { throw e || msg; }; // default behavior when something unexpected happens is to throw an exception, but caller can override this behavior if desired (see github issue #3 and #17)
                                                                                                                     // 84
-    },                                                                                                              // 85
-                                                                                                                    // 86
-    //===========================================================================                                   // 87
-                                                                                                                    // 88
-    doCallback: function(fsm, func, name, from, to, args) {                                                         // 89
-      if (func) {                                                                                                   // 90
-        try {                                                                                                       // 91
-          return func.apply(fsm, [name, from, to].concat(args));                                                    // 92
-        }                                                                                                           // 93
-        catch(e) {                                                                                                  // 94
+      if (initial && !initial.defer)                                                                                // 85
+        fsm[initial.event]();                                                                                       // 86
+                                                                                                                    // 87
+      return fsm;                                                                                                   // 88
+                                                                                                                    // 89
+    },                                                                                                              // 90
+                                                                                                                    // 91
+    //===========================================================================                                   // 92
+                                                                                                                    // 93
+    doCallback: function(fsm, func, name, from, to, args) {                                                         // 94
+      if (func) {                                                                                                   // 95
+        try {                                                                                                       // 96
+          return func.apply(fsm, [name, from, to].concat(args));                                                    // 97
+        }                                                                                                           // 98
+        catch(e) {                                                                                                  // 99
           return fsm.error(name, from, to, args, StateMachine.Error.INVALID_CALLBACK, "an exception occurred in a caller-provided callback function", e);
-        }                                                                                                           // 96
-      }                                                                                                             // 97
-    },                                                                                                              // 98
-                                                                                                                    // 99
+        }                                                                                                           // 101
+      }                                                                                                             // 102
+    },                                                                                                              // 103
+                                                                                                                    // 104
     beforeAnyEvent:  function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onbeforeevent'],                       name, from, to, args); },
     afterAnyEvent:   function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onafterevent'] || fsm['onevent'],      name, from, to, args); },
     leaveAnyState:   function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onleavestate'],                        name, from, to, args); },
     enterAnyState:   function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onenterstate'] || fsm['onstate'],      name, from, to, args); },
     changeState:     function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onchangestate'],                       name, from, to, args); },
-                                                                                                                    // 105
+                                                                                                                    // 110
     beforeThisEvent: function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onbefore' + name],                     name, from, to, args); },
     afterThisEvent:  function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onafter'  + name] || fsm['on' + name], name, from, to, args); },
     leaveThisState:  function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onleave'  + from],                     name, from, to, args); },
     enterThisState:  function(fsm, name, from, to, args) { return StateMachine.doCallback(fsm, fsm['onenter'  + to]   || fsm['on' + to],   name, from, to, args); },
-                                                                                                                    // 110
-    beforeEvent: function(fsm, name, from, to, args) {                                                              // 111
-      if ((false === StateMachine.beforeThisEvent(fsm, name, from, to, args)) ||                                    // 112
-          (false === StateMachine.beforeAnyEvent( fsm, name, from, to, args)))                                      // 113
-        return false;                                                                                               // 114
-    },                                                                                                              // 115
-                                                                                                                    // 116
-    afterEvent: function(fsm, name, from, to, args) {                                                               // 117
-      StateMachine.afterThisEvent(fsm, name, from, to, args);                                                       // 118
-      StateMachine.afterAnyEvent( fsm, name, from, to, args);                                                       // 119
+                                                                                                                    // 115
+    beforeEvent: function(fsm, name, from, to, args) {                                                              // 116
+      if ((false === StateMachine.beforeThisEvent(fsm, name, from, to, args)) ||                                    // 117
+          (false === StateMachine.beforeAnyEvent( fsm, name, from, to, args)))                                      // 118
+        return false;                                                                                               // 119
     },                                                                                                              // 120
                                                                                                                     // 121
-    leaveState: function(fsm, name, from, to, args) {                                                               // 122
-      var specific = StateMachine.leaveThisState(fsm, name, from, to, args),                                        // 123
-          general  = StateMachine.leaveAnyState( fsm, name, from, to, args);                                        // 124
-      if ((false === specific) || (false === general))                                                              // 125
-        return false;                                                                                               // 126
-      else if ((StateMachine.ASYNC === specific) || (StateMachine.ASYNC === general))                               // 127
-        return StateMachine.ASYNC;                                                                                  // 128
-    },                                                                                                              // 129
-                                                                                                                    // 130
-    enterState: function(fsm, name, from, to, args) {                                                               // 131
-      StateMachine.enterThisState(fsm, name, from, to, args);                                                       // 132
-      StateMachine.enterAnyState( fsm, name, from, to, args);                                                       // 133
+    afterEvent: function(fsm, name, from, to, args) {                                                               // 122
+      StateMachine.afterThisEvent(fsm, name, from, to, args);                                                       // 123
+      StateMachine.afterAnyEvent( fsm, name, from, to, args);                                                       // 124
+    },                                                                                                              // 125
+                                                                                                                    // 126
+    leaveState: function(fsm, name, from, to, args) {                                                               // 127
+      var specific = StateMachine.leaveThisState(fsm, name, from, to, args),                                        // 128
+          general  = StateMachine.leaveAnyState( fsm, name, from, to, args);                                        // 129
+      if ((false === specific) || (false === general))                                                              // 130
+        return false;                                                                                               // 131
+      else if ((StateMachine.ASYNC === specific) || (StateMachine.ASYNC === general))                               // 132
+        return StateMachine.ASYNC;                                                                                  // 133
     },                                                                                                              // 134
                                                                                                                     // 135
-    //===========================================================================                                   // 136
-                                                                                                                    // 137
-    buildEvent: function(name, map) {                                                                               // 138
-      return function() {                                                                                           // 139
+    enterState: function(fsm, name, from, to, args) {                                                               // 136
+      StateMachine.enterThisState(fsm, name, from, to, args);                                                       // 137
+      StateMachine.enterAnyState( fsm, name, from, to, args);                                                       // 138
+    },                                                                                                              // 139
                                                                                                                     // 140
-        var from  = this.current;                                                                                   // 141
-        var to    = map[from] || map[StateMachine.WILDCARD] || from;                                                // 142
-        var args  = Array.prototype.slice.call(arguments); // turn arguments into pure array                        // 143
-                                                                                                                    // 144
-        if (this.transition)                                                                                        // 145
+    //===========================================================================                                   // 141
+                                                                                                                    // 142
+    buildEvent: function(name, map) {                                                                               // 143
+      return function() {                                                                                           // 144
+                                                                                                                    // 145
+        var from  = this.current;                                                                                   // 146
+        var to    = map[from] || map[StateMachine.WILDCARD] || from;                                                // 147
+        var args  = Array.prototype.slice.call(arguments); // turn arguments into pure array                        // 148
+                                                                                                                    // 149
+        if (this.transition)                                                                                        // 150
           return this.error(name, from, to, args, StateMachine.Error.PENDING_TRANSITION, "event " + name + " inappropriate because previous transition did not complete");
-                                                                                                                    // 147
-        if (this.cannot(name))                                                                                      // 148
+                                                                                                                    // 152
+        if (this.cannot(name))                                                                                      // 153
           return this.error(name, from, to, args, StateMachine.Error.INVALID_TRANSITION, "event " + name + " inappropriate in current state " + this.current);
-                                                                                                                    // 150
-        if (false === StateMachine.beforeEvent(this, name, from, to, args))                                         // 151
-          return StateMachine.Result.CANCELLED;                                                                     // 152
-                                                                                                                    // 153
-        if (from === to) {                                                                                          // 154
-          StateMachine.afterEvent(this, name, from, to, args);                                                      // 155
-          return StateMachine.Result.NOTRANSITION;                                                                  // 156
-        }                                                                                                           // 157
+                                                                                                                    // 155
+        if (false === StateMachine.beforeEvent(this, name, from, to, args))                                         // 156
+          return StateMachine.Result.CANCELLED;                                                                     // 157
                                                                                                                     // 158
+        if (from === to) {                                                                                          // 159
+          StateMachine.afterEvent(this, name, from, to, args);                                                      // 160
+          return StateMachine.Result.NOTRANSITION;                                                                  // 161
+        }                                                                                                           // 162
+                                                                                                                    // 163
         // prepare a transition method for use EITHER lower down, or by caller if they want an async transition (indicated by an ASYNC return value from leaveState)
-        var fsm = this;                                                                                             // 160
-        this.transition = function() {                                                                              // 161
-          fsm.transition = null; // this method should only ever be called once                                     // 162
-          fsm.current = to;                                                                                         // 163
-          StateMachine.enterState( fsm, name, from, to, args);                                                      // 164
-          StateMachine.changeState(fsm, name, from, to, args);                                                      // 165
-          StateMachine.afterEvent( fsm, name, from, to, args);                                                      // 166
-          return StateMachine.Result.SUCCEEDED;                                                                     // 167
-        };                                                                                                          // 168
+        var fsm = this;                                                                                             // 165
+        this.transition = function() {                                                                              // 166
+          fsm.transition = null; // this method should only ever be called once                                     // 167
+          fsm.current = to;                                                                                         // 168
+          StateMachine.enterState( fsm, name, from, to, args);                                                      // 169
+          StateMachine.changeState(fsm, name, from, to, args);                                                      // 170
+          StateMachine.afterEvent( fsm, name, from, to, args);                                                      // 171
+          return StateMachine.Result.SUCCEEDED;                                                                     // 172
+        };                                                                                                          // 173
         this.transition.cancel = function() { // provide a way for caller to cancel async transition if desired (issue #22)
-          fsm.transition = null;                                                                                    // 170
-          StateMachine.afterEvent(fsm, name, from, to, args);                                                       // 171
-        }                                                                                                           // 172
-                                                                                                                    // 173
-        var leave = StateMachine.leaveState(this, name, from, to, args);                                            // 174
-        if (false === leave) {                                                                                      // 175
-          this.transition = null;                                                                                   // 176
-          return StateMachine.Result.CANCELLED;                                                                     // 177
-        }                                                                                                           // 178
-        else if (StateMachine.ASYNC === leave) {                                                                    // 179
-          return StateMachine.Result.PENDING;                                                                       // 180
-        }                                                                                                           // 181
-        else {                                                                                                      // 182
+          fsm.transition = null;                                                                                    // 175
+          StateMachine.afterEvent(fsm, name, from, to, args);                                                       // 176
+        }                                                                                                           // 177
+                                                                                                                    // 178
+        var leave = StateMachine.leaveState(this, name, from, to, args);                                            // 179
+        if (false === leave) {                                                                                      // 180
+          this.transition = null;                                                                                   // 181
+          return StateMachine.Result.CANCELLED;                                                                     // 182
+        }                                                                                                           // 183
+        else if (StateMachine.ASYNC === leave) {                                                                    // 184
+          return StateMachine.Result.PENDING;                                                                       // 185
+        }                                                                                                           // 186
+        else {                                                                                                      // 187
           if (this.transition) // need to check in case user manually called transition() but forgot to return StateMachine.ASYNC
-            return this.transition();                                                                               // 184
-        }                                                                                                           // 185
-                                                                                                                    // 186
-      };                                                                                                            // 187
-    }                                                                                                               // 188
-                                                                                                                    // 189
-  }; // StateMachine                                                                                                // 190
+            return this.transition();                                                                               // 189
+        }                                                                                                           // 190
                                                                                                                     // 191
-  //===========================================================================                                     // 192
-                                                                                                                    // 193
-  if ("function" === typeof define) {                                                                               // 194
-    define(function(require) { return StateMachine; });                                                             // 195
-  }                                                                                                                 // 196
-  else {                                                                                                            // 197
-    window.StateMachine = StateMachine;                                                                             // 198
-  }                                                                                                                 // 199
-                                                                                                                    // 200
-}(this));                                                                                                           // 201
-                                                                                                                    // 202
-                                                                                                                    // 203
+      };                                                                                                            // 192
+    }                                                                                                               // 193
+                                                                                                                    // 194
+  }; // StateMachine                                                                                                // 195
+                                                                                                                    // 196
+  //===========================================================================                                     // 197
+                                                                                                                    // 198
+  //======                                                                                                          // 199
+  // NODE                                                                                                           // 200
+  //======                                                                                                          // 201
+  if (typeof exports !== 'undefined') {                                                                             // 202
+    if (typeof module !== 'undefined' && module.exports) {                                                          // 203
+      exports = module.exports = StateMachine;                                                                      // 204
+    }                                                                                                               // 205
+    exports.StateMachine = StateMachine;                                                                            // 206
+  }                                                                                                                 // 207
+  //============                                                                                                    // 208
+  // AMD/REQUIRE                                                                                                    // 209
+  //============                                                                                                    // 210
+  else if (typeof define === 'function' && define.amd) {                                                            // 211
+    define(function(require) { return StateMachine; });                                                             // 212
+  }                                                                                                                 // 213
+  //========                                                                                                        // 214
+  // BROWSER                                                                                                        // 215
+  //========                                                                                                        // 216
+  else if (typeof window !== 'undefined') {                                                                         // 217
+    window.StateMachine = StateMachine;                                                                             // 218
+  }                                                                                                                 // 219
+  //===========                                                                                                     // 220
+  // WEB WORKER                                                                                                     // 221
+  //===========                                                                                                     // 222
+  else if (typeof self !== 'undefined') {                                                                           // 223
+    self.StateMachine = StateMachine;                                                                               // 224
+  }                                                                                                                 // 225
+                                                                                                                    // 226
+}());                                                                                                               // 227
+                                                                                                                    // 228
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }).call(this);
@@ -344,16 +369,17 @@ ReactionCore.registerPackage = function(packageInfo) {
 ReactionCore.registerPackage({
   name: 'reaction-commerce',
   depends: ['fileUploader', 'staffAccountsManager', 'paymentMethod', 'mailService', 'analytics', 'shipmentMethod'],
-  label: 'Settings',
-  description: 'Reaction Shop',
-  icon: 'fa fa-shopping-cart',
+  label: 'Core',
+  description: 'Reaction Commerce Core',
+  icon: 'fa fa-sun-o',
   settingsRoute: 'dashboard/settings/shop',
   overviewRoute: 'dashboard',
-  overViewLabel: 'App Gallery',
+  overViewLabel: 'Dashboard',
+  overviewIcon: 'fa fa-th',
   priority: '3',
-  hidden: true,
+  hidden: false,
   autoEnable: true,
-  hasWidget: true,
+  hasWidget: false,
   shopPermissions: [
     {
       label: "Customers",
@@ -379,9 +405,11 @@ ReactionCore.registerPackage({
   name: 'reaction-commerce-orders',
   provides: ['orderManager'],
   label: 'Orders',
+  description: 'Fulfill your orders',
+  icon: 'fa fa-sun-o',
   overviewRoute: 'dashboard/orders',
-  hasWidget: true,
-  hidden: true,
+  settingsRoute: 'dashboard/orders',
+  hidden: false,
   autoEnable: true,
   shopPermissions: [
     {
@@ -395,9 +423,10 @@ ReactionCore.registerPackage({
 ReactionCore.registerPackage({
   name: 'reaction-commerce-staff-accounts',
   provides: ['staffAccountsManager'],
-  label: 'Admin Access',
+  label: 'Administrative Users',
+  description: 'Administrative user management',
+  icon: 'fa fa-users',
   settingsRoute: 'dashboard/settings/account',
-  hidden: true,
   autoEnable: true,
   shopPermissions: [
     {
@@ -406,7 +435,13 @@ ReactionCore.registerPackage({
       group: "Shop Settings"
     }
   ]
-});
+}, ReactionCore.registerPackage({
+  name: 'reaction-commerce-create-products',
+  hidden: true,
+  overviewRoute: 'createProduct',
+  overViewLabel: 'Create',
+  overviewIcon: 'fa fa-plus'
+}));
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }).call(this);
@@ -488,6 +523,9 @@ this.ShopController = RouteController.extend({
     layoutHeader: {
       to: "layoutHeader"
     },
+    layoutFooter: {
+      to: "layoutFooter"
+    },
     dashboard: {
       to: "dashboard"
     }
@@ -516,7 +554,10 @@ Router.map(function() {
     controller: LandingController,
     path: "/",
     name: "index",
-    template: "index"
+    template: "index",
+    waitOn: function() {
+      return this.subscribe("products");
+    }
   });
   this.route("products", {
     controller: ShopController,
@@ -622,27 +663,20 @@ Router.map(function() {
         to: "layoutHeader"
       }
     },
-    waitOn: function() {
-      return this.subscribe("cart", Session.get("sessionId", Meteor.userId()));
-    },
     subscriptions: function() {
       this.subscribe("shops");
       this.subscribe("products");
       this.subscribe("shipping");
       this.subscribe("packages");
-      return this.subscribe("userOrders", Meteor.userId());
-    },
-    data: function() {
-      if (this.ready()) {
-        return Cart.findOne();
-      }
+      this.subscribe("userOrders", Meteor.userId());
+      return this.subscribe("cart", Session.get("sessionId", Meteor.userId()));
     }
   });
   return this.route('cartCompleted', {
     controller: ShopController,
     path: 'completed/:_id',
     template: 'cartCompleted',
-    waitOn: function() {
+    subscriptions: function() {
       return this.subscribe("userOrders", Meteor.userId());
     },
     data: function() {
@@ -652,6 +686,8 @@ Router.map(function() {
         } else {
           return this.render('unauthorized');
         }
+      } else {
+        return this.render("loading");
       }
     }
   });
@@ -846,13 +882,11 @@ ReactionCore.Schemas.Address = new SimpleSchema({
   },
   isCommercial: {
     label: "This is a commercial address",
-    type: Boolean,
-    defaultValue: false
+    type: Boolean
   },
   isDefault: {
     label: "This is my default address",
-    type: Boolean,
-    defaultValue: true
+    type: Boolean
   },
   metafields: {
     type: [ReactionCore.Schemas.Metafield],
@@ -1036,20 +1070,16 @@ ReactionCore.Schemas.Shipping = new SimpleSchema({
 
 ReactionCore.Schemas.ShipmentQuote = new SimpleSchema({
   carrier: {
-    type: Number
+    type: String
   },
   method: {
-    type: Number
+    type: ReactionCore.Schemas.ShippingMethod
+  },
+  rate: {
+    type: Number,
+    decimal: true
   },
   tracking: {
-    type: String,
-    optional: true
-  },
-  label: {
-    type: String,
-    optional: true
-  },
-  value: {
     type: String,
     optional: true
   }
@@ -1058,10 +1088,17 @@ ReactionCore.Schemas.ShipmentQuote = new SimpleSchema({
 ReactionCore.Schemas.Shipment = new SimpleSchema({
   address: {
     type: ReactionCore.Schemas.Address,
+    label: "Destination",
     optional: true
   },
   shipmentMethod: {
     type: ReactionCore.Schemas.ShipmentQuote,
+    label: "Selected Rate",
+    optional: true
+  },
+  shipmentQuotes: {
+    type: [ReactionCore.Schemas.ShipmentQuote],
+    label: "Rate Quotes",
     optional: true
   }
 });
@@ -1069,7 +1106,7 @@ ReactionCore.Schemas.Shipment = new SimpleSchema({
 ReactionCore.Schemas.ShippingProvider = new SimpleSchema({
   name: {
     type: String,
-    label: "Service Name"
+    label: "Service Code"
   },
   label: {
     type: String,
@@ -1794,6 +1831,13 @@ ReactionCore.Schemas.History = new SimpleSchema({
   }
 });
 
+
+/*
+ * ReactionCore.Schemas.OrderItems
+ * merges with ReactionCore.Schemas.Cart, ReactionCore.Schemas.OrderItems]
+ * to create Orders collection
+ */
+
 ReactionCore.Schemas.OrderItems = new SimpleSchema({
   additionalField: {
     type: String,
@@ -1939,20 +1983,16 @@ ReactionCore.Schemas.Shipping = new SimpleSchema({
 
 ReactionCore.Schemas.ShipmentQuote = new SimpleSchema({
   carrier: {
-    type: Number
+    type: String
   },
   method: {
-    type: Number
+    type: ReactionCore.Schemas.ShippingMethod
+  },
+  rate: {
+    type: Number,
+    decimal: true
   },
   tracking: {
-    type: String,
-    optional: true
-  },
-  label: {
-    type: String,
-    optional: true
-  },
-  value: {
     type: String,
     optional: true
   }
@@ -1961,10 +2001,17 @@ ReactionCore.Schemas.ShipmentQuote = new SimpleSchema({
 ReactionCore.Schemas.Shipment = new SimpleSchema({
   address: {
     type: ReactionCore.Schemas.Address,
+    label: "Destination",
     optional: true
   },
   shipmentMethod: {
     type: ReactionCore.Schemas.ShipmentQuote,
+    label: "Selected Rate",
+    optional: true
+  },
+  shipmentQuotes: {
+    type: [ReactionCore.Schemas.ShipmentQuote],
+    label: "Rate Quotes",
     optional: true
   }
 });
@@ -1972,7 +2019,7 @@ ReactionCore.Schemas.Shipment = new SimpleSchema({
 ReactionCore.Schemas.ShippingProvider = new SimpleSchema({
   name: {
     type: String,
-    label: "Service Name"
+    label: "Service Code"
   },
   label: {
     type: String,
@@ -3435,9 +3482,6 @@ Factory.define('productVariants', new Meteor.Collection('ProductVariants'), {
   },
   updatedAt: function() {
     return new Date;
-  },
-  minimumOrderQty: function() {
-    return _.random(0, 1000);
   }
 });
 
@@ -3696,7 +3740,6 @@ Meteor.methods({
    */
   addToCart: function(cartSession, productId, variantData, quantity) {
     var cartVariantExists, currentCart, shopId;
-    console.log(variantData);
     shopId = ReactionCore.getShopId(this);
     currentCart = createCart(cartSession.sessionId, this.userId, shopId);
     if (!currentCart) {
@@ -3835,14 +3878,14 @@ Meteor.methods({
     cart.status = "new";
     try {
       Orders.insert(cart);
+      Cart.remove({
+        _id: currentCartId
+      });
     } catch (_error) {
       error = _error;
       ReactionCore.Events.info("error in order insert");
       ReactionCore.Events.warn(error, Orders.simpleSchema().namedContext().invalidKeys());
     }
-    Cart.remove({
-      userId: currentUserId
-    });
     return cart._id;
   },
 
@@ -4020,21 +4063,23 @@ Meteor.methods({
   /*
    * gets shipping rates and updates the users cart methods
    */
-  updateCartShippingRates: function(cartSession) {
+  updateShipmentQuotes: function(cartSession) {
     var cart, rates, _ref, _ref1;
     if (!cartSession) {
       ReactionCore.Events.info("no cart passed to update rates, return null.");
       return null;
     }
-    if (((_ref = cartSession.shipping) != null ? _ref.address : void 0) && ((_ref1 = cartSession.shipping) != null ? _ref1.shipmentMethods : void 0)) {
+    if (((_ref = cartSession.shipping) != null ? _ref.address : void 0) && ((_ref1 = cartSession.shipping) != null ? _ref1.shipmentQuotes : void 0)) {
       return;
     }
     cart = Cart.findOne(cartSession._id);
     rates = Meteor.call("getShippingRates");
     if (rates.length > 0) {
-      Cart.update(cartSession._id, {
+      ReactionCore.Collections.Cart.update({
+        '_id': cartSession._id
+      }, {
         $set: {
-          'shipping.shipmentMethods': rates
+          'shipping.shipmentQuotes': rates
         }
       });
     }

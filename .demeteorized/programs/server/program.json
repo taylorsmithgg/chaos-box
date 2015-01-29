@@ -313,7 +313,6 @@
         "default/mixins.less": "assets/packages/reactioncommerce_core-theme/default/mixins.less",
         "default/variables.less": "assets/packages/reactioncommerce_core-theme/default/variables.less",
         "theme/accounts/accounts.less": "assets/packages/reactioncommerce_core-theme/theme/accounts/accounts.less",
-        "theme/accounts/dropdown/dropdown.less": "assets/packages/reactioncommerce_core-theme/theme/accounts/dropdown/dropdown.less",
         "theme/accounts/inline/inline.less": "assets/packages/reactioncommerce_core-theme/theme/accounts/inline/inline.less",
         "theme/cart/cart.less": "assets/packages/reactioncommerce_core-theme/theme/cart/cart.less",
         "theme/cart/cartDrawer/cartDrawer.less": "assets/packages/reactioncommerce_core-theme/theme/cart/cartDrawer/cartDrawer.less",
@@ -732,19 +731,6 @@
       "path": "packages/reactioncommerce_reaction-google-analytics.js"
     },
     {
-      "sourceMap": "packages/reactioncommerce_reaction-helloworld.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/reactioncommerce_reaction-helloworld.js"
-    },
-    {
-      "sourceMap": "packages/reactioncommerce_reaction-shipping.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/reactioncommerce_reaction-shipping.js",
-      "assets": {
-        "private/data/Shipping.json": "assets/packages/reactioncommerce_reaction-shipping/private/data/Shipping.json"
-      }
-    },
-    {
       "node_modules": "npm/reactioncommerce:reaction-paypal/node_modules",
       "sourceMap": "packages/reactioncommerce_reaction-paypal.js.map",
       "sourceMapRoot": "packages",
@@ -787,6 +773,14 @@
       "sourceMap": "packages/reactioncommerce_reaction-auth-net.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/reactioncommerce_reaction-auth-net.js"
+    },
+    {
+      "sourceMap": "packages/reactioncommerce_reaction-shipping.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/reactioncommerce_reaction-shipping.js",
+      "assets": {
+        "private/data/Shipping.json": "assets/packages/reactioncommerce_reaction-shipping/private/data/Shipping.json"
+      }
     },
     {
       "path": "packages/global-imports.js"

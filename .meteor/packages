@@ -24,11 +24,11 @@ nemo64:bootstrap
 reactioncommerce:core-theme
 reactioncommerce:core
 reactioncommerce:reaction-google-analytics
-reactioncommerce:reaction-helloworld
-reactioncommerce:reaction-shipping
 reactioncommerce:reaction-paypal
 reactioncommerce:reaction-braintree
 reactioncommerce:reaction-stripe
 cryptoquick:jade
 houston:admin
 noorderstorm:stellar
+reactioncommerce:reaction-auth-net
+reactioncommerce:reaction-shipping

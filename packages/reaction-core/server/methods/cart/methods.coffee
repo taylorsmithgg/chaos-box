@@ -8,7 +8,6 @@ Meteor.methods
   addToCart: (cartSession, productId, variantData, quantity) ->
     # createCart will create for session if necessary, update user if necessary,
     # sync all user's carts, and return the cart
-    console.log(variantData)
     shopId = ReactionCore.getShopId(@)
     currentCart = createCart cartSession.sessionId, @userId, shopId
 
@@ -94,11 +93,11 @@ Meteor.methods
 
     try
       Orders.insert cart
+      Cart.remove _id: currentCartId
     catch error
       ReactionCore.Events.info "error in order insert"
       ReactionCore.Events.warn error, Orders.simpleSchema().namedContext().invalidKeys()
 
-    Cart.remove userId: currentUserId
     return cart._id #new order id
 
   ###

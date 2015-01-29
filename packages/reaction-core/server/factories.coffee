@@ -97,7 +97,6 @@ Factory.define 'productVariants', new Meteor.Collection('ProductVariants'),
 #  positions:
   createdAt: -> new Date
   updatedAt: -> new Date
-  minimumOrderQty: -> _.random 0, 1000
 
 
 Factory.define 'tag', ReactionCore.Collections.Tags,

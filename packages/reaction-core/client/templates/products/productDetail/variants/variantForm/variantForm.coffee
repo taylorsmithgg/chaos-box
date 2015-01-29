@@ -31,6 +31,7 @@ Template.variantForm.helpers
     unless @inventoryManagement is true
       return "display:none;"
 
+
 Template.variantForm.events
   "change form :input": (event,template) ->
     # auto-submit the variant form whenever any fields are changed

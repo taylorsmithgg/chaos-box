@@ -107,10 +107,10 @@ raix:eventemitter@0.1.1
 raix:ui-dropped-event@0.0.7
 random@1.0.2
 reactioncommerce:core@0.2.3
-reactioncommerce:core-theme@1.0.5
+reactioncommerce:core-theme@1.0.6
+reactioncommerce:reaction-auth-net@0.0.1
 reactioncommerce:reaction-braintree@1.0.0
 reactioncommerce:reaction-google-analytics@0.1.2
-reactioncommerce:reaction-helloworld@0.1.4
 reactioncommerce:reaction-paypal@0.1.4
 reactioncommerce:reaction-shipping@0.1.2
 reactioncommerce:reaction-stripe@1.0.0

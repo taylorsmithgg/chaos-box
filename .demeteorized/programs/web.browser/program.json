@@ -2,22 +2,22 @@
   "format": "web-program-pre1",
   "manifest": [
     {
-      "path": "6a9c5bea0b8c611374dd6929dfd9aa6ceeb44953.js",
+      "path": "b100bb866ad0f964b2438cfaf7886fb723c3827e.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/6a9c5bea0b8c611374dd6929dfd9aa6ceeb44953.js",
-      "size": 1912627,
-      "hash": "6a9c5bea0b8c611374dd6929dfd9aa6ceeb44953"
+      "url": "/b100bb866ad0f964b2438cfaf7886fb723c3827e.js",
+      "size": 1912813,
+      "hash": "b100bb866ad0f964b2438cfaf7886fb723c3827e"
     },
     {
-      "path": "6f7e30354762cf5f2f2a2939479bd98038a47c22.css",
+      "path": "c4dec5f5c2c6ee4aad37fa4254f917488e695616.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/6f7e30354762cf5f2f2a2939479bd98038a47c22.css?meteor_css_resource=true",
-      "size": 316869,
-      "hash": "6f7e30354762cf5f2f2a2939479bd98038a47c22"
+      "url": "/c4dec5f5c2c6ee4aad37fa4254f917488e695616.css?meteor_css_resource=true",
+      "size": 315144,
+      "hash": "c4dec5f5c2c6ee4aad37fa4254f917488e695616"
     },
     {
       "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.eot",

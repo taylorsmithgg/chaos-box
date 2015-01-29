@@ -72,6 +72,8 @@ Router.map ->
     path: "/"
     name: "index"
     template: "index"
+    waitOn: ->
+      @subscribe "products"
 
   @route "products",
     controller: ShopController
@@ -159,28 +161,26 @@ Router.map ->
     yieldTemplates:
       checkoutHeader:
         to: "layoutHeader"
-    waitOn: ->
-      @subscribe "cart", Session.get "sessionId", Meteor.userId()
     subscriptions: ->
       @subscribe "shops"
       @subscribe "products"
       @subscribe "shipping"
       @subscribe "packages"
       @subscribe "userOrders", Meteor.userId()
-    data: ->
-      if @.ready()
-        return Cart.findOne()
+      @subscribe "cart", Session.get "sessionId", Meteor.userId()
 
   #completed orders
   @route 'cartCompleted',
     controller: ShopController
-    path: 'completed/:_id',
+    path: 'completed/:_id'
     template: 'cartCompleted'
-    waitOn: ->
+    subscriptions: ->
       @subscribe "userOrders", Meteor.userId()
     data: ->
-      if @.ready()
+      if @ready()
         if Orders.findOne(@params._id)
           return Orders.findOne(@params._id)
         else
           @render 'unauthorized'
+      else
+        @render "loading"

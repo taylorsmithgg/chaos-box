@@ -70,19 +70,19 @@ _.extend ReactionCore,
     return false unless permissions
     permissions = [permissions] unless _.isArray(permissions)
     return @.hasOwnerAccess() or _.intersection(permissions, @userPermissions).length or (@isAdmin and _.intersection(permissions, @shopPermissions).length)
+  # role checkout
+  hasOwnerAccess: ->
+    return Roles.userIsInRole(Meteor.user(), "admin") or @isOwner
+  # returns shop id
+  getShopId: ->
+    return @shopId
   # isVendor check
   isVendor: (permissions) ->
     return false unless permissions
     permissions = [permissions] unless _.isArray(permissions)
     return @.hasVendorAccess()
-  # role checkout
-  hasOwnerAccess: ->
-    return Roles.userIsInRole(Meteor.user(), "admin") or @isOwner
-  # returns shop id
   hasVendorAccess: ->
     return Roles.userIsInRole(Meteor.user(), "vendor")
-  getShopId: ->
-    return @shopId
 
 Meteor.startup ->
     ReactionCore.init()
