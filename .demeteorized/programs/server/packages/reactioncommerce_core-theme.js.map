@@ -1,1 +1,0 @@
-{"version":3,"sources":["reactioncommerce:core-theme/theme-data.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,6B;AACA,8B;AACA,C","file":"/packages/reactioncommerce:core-theme.js","sourcesContent":["ThemeData = function (file) {\n  return Assets.getText(file);\n}\n"]}

@@ -2,10 +2,410 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="483d713f-7bad-4408-b46b-ecfeb78bf7a9" name="Default" comment="Updated compatibility issues">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-auth-net" afterPath="$PROJECT_DIR$/packages/reaction-auth-net" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/index.jade" afterPath="$PROJECT_DIR$/client/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-core/package.js" afterPath="$PROJECT_DIR$/packages/reaction-core/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/app/common/routing.coffee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/app/common/routing.coffee.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/app/server/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/boilerplate-generator/boilerplate_web.browser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/boilerplate-generator/boilerplate_web.cordova.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/iron_dynamic-template/dynamic_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/iron_layout/default_layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/iron_router/lib/templates.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/oauth/end_of_popup_response.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/oauth/end_of_redirect_response.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/default/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/default/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/accounts/accounts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/accounts/inline/inline.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/cart.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/cartDrawer/cartDrawer.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/cartDrawer/cartItems/cartItems.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/cartDrawer/cartSubTotals/cartSubTotals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/cartIcon/cartIcon.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/checkout/addressBook/addressBook.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/checkout/checkout.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/cart/checkout/progressBar/progressBar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/dashboard.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/dashboardIcon/dashboardIcon.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/orders/details/detail.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/orders/orders.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/packages/grid/package/package.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/packages/panel/panel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/settings/settingsAccount/shopMember/shopMember.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/settings/settingsGeneral/settingsGeneral.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/dashboard/widget/widget.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/layout/footer/footer.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/layout/header/header.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/layout/header/tags/tags.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/attributes/attributes.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/images/productImageGallery.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/productDetail.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/tags/tags.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/variants/variant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/variants/variantForm/childVariant/childVariant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/variants/variantForm/variantForm.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productDetail/variants/variantList/variantList.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productGrid/productGrid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core-theme/theme/products/productList/productList.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/Orders.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/Products.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/Shops.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/Tags.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/ar.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/cn.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/cs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/de.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/en.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/es.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/fr.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/he.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/it.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/my.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/pl.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/pt.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/ru.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/sl.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/sv.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/i18n/vi.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/roles.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/private/data/users.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/server/emailTemplates/shopMemberInvite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_core/server/emailTemplates/shopMemberNotification.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/reactioncommerce_reaction-shipping/private/data/Shipping.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/assets/packages/spiderable/phantom_script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/boot-utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-base.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-facebook.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-facebook.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-oauth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-oauth.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-password.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-password.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-ui-unstyled.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/accounts-ui-unstyled.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/alanning_roles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/alanning_roles.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_autoform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_autoform.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_collection2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_collection2.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_geocoder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_geocoder.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_simple-schema.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_simple-schema.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_template-extension.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/aldeed_template-extension.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/amplify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/amplify.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/anti_fake.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/anti_fake.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/application-configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/application-configuration.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/autoupdate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/autoupdate.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/base64.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/binary-heap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/binary-heap.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/blaze-tools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/blaze-tools.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/blaze.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/blaze.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/boilerplate-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/boilerplate-generator.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/callback-hook.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/callback-hook.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_access-point.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_access-point.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_base-package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_base-package.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_collection-filters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_collection-filters.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_collection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_collection.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_data-man.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_data-man.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_file.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_filesystem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_filesystem.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_graphicsmagick.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_graphicsmagick.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_gridfs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_gridfs.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_http-methods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_http-methods.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_http-publish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_http-publish.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_power-queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_power-queue.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_reactive-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_reactive-list.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_reactive-property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_reactive-property.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_s3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_s3.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_standard-packages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_standard-packages.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_storage-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_storage-adapter.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_tempstore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_tempstore.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_ui.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_upload-http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_upload-http.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cfs_worker.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/check.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/check.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cmather_handlebars-server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cmather_handlebars-server.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/coffeescript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/coffeescript.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cryptoquick_jade.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/cryptoquick_jade.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/d3js_d3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/d3js_d3.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/dburles_collection-helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/dburles_collection-helpers.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/dburles_factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/dburles_factory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/dburles_mongo-collection-instances.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/dburles_mongo-collection-instances.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ddp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ddp.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/deps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/deps.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ejson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ejson.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/email.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/email.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/facebook.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/facebook.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/follower-livedata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/follower-livedata.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/force-ssl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/force-ssl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/fortawesome_fontawesome.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/fortawesome_fontawesome.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/geojson-utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/geojson-utils.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/global-imports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/handlebars.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/houston_admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/houston_admin.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/html-tools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/html-tools.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/htmljs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/htmljs.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/http.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/id-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/id-map.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_controller.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_dynamic-template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_dynamic-template.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_layout.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_location.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_location.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_middleware-stack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_middleware-stack.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_router.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_router.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_url.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/iron_url.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/jquery.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/json.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/less.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/less.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/livedata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/livedata.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/localstorage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/localstorage.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/logging.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/logging.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/matb33_collection-hooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/matb33_collection-hooks.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/meteor-platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/meteor-platform.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/meteor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/meteor.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/minifiers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/minifiers.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/minimongo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/minimongo.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/mongo-livedata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/mongo-livedata.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/mongo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/mongo.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/mrt_underscore-string-latest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/mrt_underscore-string-latest.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/nemo64_bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/nemo64_bootstrap.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/noorderstorm_stellar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/noorderstorm_stellar.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/npm-bcrypt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/npm-bcrypt.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/npm-node-aes-gcm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/npm-node-aes-gcm.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/oauth-encryption.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/oauth-encryption.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/oauth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/oauth.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/oauth2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/oauth2.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/observe-sequence.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/observe-sequence.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ongoworks_bunyan-logger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ongoworks_bunyan-logger.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ongoworks_pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ongoworks_pdf.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ongoworks_speakingurl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ongoworks_speakingurl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ordered-dict.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ordered-dict.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/prinzdezibel_accounts-guest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/prinzdezibel_accounts-guest.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/raix_eventemitter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/raix_eventemitter.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/raix_ui-dropped-event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/raix_ui-dropped-event.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/random.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_core-theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_core-theme.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-auth-net.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-auth-net.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-braintree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-braintree.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-google-analytics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-google-analytics.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-paypal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-paypal.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-shipping.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-shipping.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-stripe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactioncommerce_reaction-stripe.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactive-dict.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactive-dict.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactive-var.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reactive-var.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/reload.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/retry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/retry.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/routepolicy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/routepolicy.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/service-configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/service-configuration.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/session.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/session.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/sha.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/sha.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/spacebars-compiler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/spacebars-compiler.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/spacebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/spacebars.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/spiderable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/spiderable.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/srp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/srp.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/templating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/templating.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/tracker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/tracker.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/ui.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/underscore.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/url.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/url.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/webapp-hashing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/webapp-hashing.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/webapp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/packages/webapp.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/program.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/shell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/server/start.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/about-sep.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/back.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/background.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/bluemonkeyvapes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/bluewhite.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/chaos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/chaosbox.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/chasethevape.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/contact-sep.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/coolvapes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/magnoliavapes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/msvapors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/name-label.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/name-zig.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/nashvillevapor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/pic-t1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/pic-t2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/pic-t3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/pic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio-sep.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio/port01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio/port02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio/port03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio/port04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio/port05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/portfolio/port06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/preciousvapes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/promo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/redyellow.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/spread.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/symbol.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/tobaccovape.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/vapeescape.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/vaporwize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/wolfrivervapor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/zooks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/img/zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/resources/avatar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/app/resources/placeholder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/b100bb866ad0f964b2438cfaf7886fb723c3827e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/c4dec5f5c2c6ee4aad37fa4254f917488e695616.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/programs/web.browser/program.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/server/.bundle_version.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.demeteorized/star.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-core/private/data/i18n/dev.json" afterPath="$PROJECT_DIR$/packages/reaction-core/private/data/i18n/dev.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/dropdown/dropdown.html" afterPath="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/dropdown/dropdown.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-core/private/data/i18n/en.json" afterPath="$PROJECT_DIR$/packages/reaction-core/private/data/i18n/en.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_dropdown.html" afterPath="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_dropdown.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_single.html" afterPath="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_single.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/style.css" afterPath="$PROJECT_DIR$/client/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reaction.iws" />
@@ -30,21 +430,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/views/index.jade">
+      <file leaf-file-name="spacebars.coffee" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/helpers/spacebars.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81885856" vertical-offset="375" max-vertical-offset="3000">
-              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/reaction-core/package.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6375">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state vertical-scroll-proportion="-0.2849315" vertical-offset="959" max-vertical-offset="4695">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -63,7 +453,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/.gitmodules" />
         <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/layout/header/header.html" />
@@ -71,7 +460,6 @@
         <option value="$PROJECT_DIR$/client/views/about.jade" />
         <option value="$PROJECT_DIR$/client/views/layout.jade" />
         <option value="$PROJECT_DIR$/client/views/retailers.jade" />
-        <option value="$PROJECT_DIR$/client/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/cart/checkout/shipping/shipping.html" />
         <option value="$PROJECT_DIR$/packages/reaction-shipping/client/templates/shipping.coffee" />
         <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/layout/layout.html" />
@@ -83,6 +471,18 @@
         <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/products/productDetail/variants/variantForm/variantForm.html" />
         <option value="$PROJECT_DIR$/packages/reaction-core/package.js" />
         <option value="$PROJECT_DIR$/client/views/index.jade" />
+        <option value="$PROJECT_DIR$/client/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_dropdown.html" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_single.html" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/dropdown/dropdown.html" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/private/data/i18n/dev.json" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/private/data/i18n/en.json" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/accounts-ui.coffee" />
+        <option value="$PROJECT_DIR$/packages/reaction-core/client/helpers/spacebars.coffee" />
+        <option value="$PROJECT_DIR$/client/client.js" />
+        <option value="$PROJECT_DIR$/common/app.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/client/templates/layout/loginbuttons.html" />
       </list>
     </option>
   </component>
@@ -118,7 +518,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -147,7 +546,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -161,16 +560,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reaction-core" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,6 +584,7 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -191,14 +592,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -206,6 +603,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -242,31 +643,38 @@
       <option name="number" value="Default" />
       <updated>1422162146239</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated compatibility issues">
+      <created>1423625002963</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1423625002963</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="320" y="23" width="960" height="712" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32970452" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3888025" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3329843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -284,9 +692,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -316,188 +724,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/cart/checkout/payment/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/dashboard/orders/stateHelpers/payment/payment.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/products/productDetail/productDetail.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="3294">
-          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/hooks/hooks.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1062">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/schemas/products.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="3906">
-          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="129" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/products/productDetail/variants/variantForm/variantForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2286">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/routing.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="3456">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/app.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="1692">
-          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/cart/checkout/payment/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/dashboard/orders/stateHelpers/payment/payment.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="3600">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9936">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/routing.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="3420">
-          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/layout/header/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="468">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3672">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="468">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3672">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/server/app.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/check-settings">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/run">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="925">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/disclaimer.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6899662" vertical-offset="0" max-vertical-offset="887">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/about.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12" vertical-offset="0" max-vertical-offset="900">
@@ -526,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/helpers/helpers.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="691" max-vertical-offset="4662">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/retailers.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42070118" vertical-offset="18" max-vertical-offset="1530">
@@ -544,13 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="408" max-vertical-offset="2538">
           <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22478071" vertical-offset="3269" max-vertical-offset="9936">
-          <caret line="193" column="37" selection-start-line="193" selection-start-column="37" selection-end-line="193" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -659,6 +871,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="615">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/dropdown/dropdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4166665" vertical-offset="74" max-vertical-offset="1050">
+          <caret line="12" column="147" selection-start-line="12" selection-start-column="147" selection-end-line="12" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/cart/checkout/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="270">
+          <caret line="3" column="133" selection-start-line="3" selection-start-column="133" selection-end-line="3" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/private/data/i18n/dev.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665" vertical-offset="2729" max-vertical-offset="3945">
+          <caret line="191" column="46" selection-start-line="191" selection-start-column="46" selection-end-line="191" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/private/data/i18n/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.333333" vertical-offset="2752" max-vertical-offset="4065">
+          <caret line="200" column="35" selection-start-line="200" selection-start-column="35" selection-end-line="200" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/private/data/Products.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19955654" vertical-offset="0" max-vertical-offset="1650">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/reaction-core/package.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6375">
@@ -667,10 +927,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23789474" vertical-offset="2902" max-vertical-offset="8280">
+          <caret line="201" column="17" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/themes/custom.bootstrap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6462264" vertical-offset="401" max-vertical-offset="825">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/themes/custom.reaction.import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15037593" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/themes/custom.reaction.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/themes/custom.bootstrap.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="24227" max-vertical-offset="84165">
+          <caret line="1624" column="9" selection-start-line="1624" selection-start-column="5" selection-end-line="1624" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core-theme/default/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3030">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core-theme/default/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6760564" vertical-offset="714" max-vertical-offset="1140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core-theme/theme/accounts/inline/inline.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/helpers/helpers.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/collections/collections.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/common/collections/collectionFS.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81885856" vertical-offset="375" max-vertical-offset="3000">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="3000">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/helpers/helpers.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325893" vertical-offset="796" max-vertical-offset="4005">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/themes/custom.reaction.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58215964" vertical-offset="667" max-vertical-offset="32955">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/Meteor/lib/Meteor.jar!/tsMeteorStubs/meteor-v1.0.0.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326316" vertical-offset="24022" max-vertical-offset="32850">
+          <caret line="1612" column="12" selection-start-line="1612" selection-start-column="12" selection-end-line="1612" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/accounts-ui.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031578947" vertical-offset="0" max-vertical-offset="570">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/dropdown/dropdown.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.821053" vertical-offset="4430" max-vertical-offset="4905">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core-theme/theme/accounts/accounts.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.089201875" vertical-offset="5227" max-vertical-offset="6495">
+          <caret line="351" column="11" selection-start-line="351" selection-start-column="11" selection-end-line="351" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7808219" vertical-offset="0" max-vertical-offset="390">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/templates/accounts/accounts-ui/login_buttons_dropdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41935483" vertical-offset="607" max-vertical-offset="3675">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reaction-core/client/helpers/spacebars.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2849315" vertical-offset="959" max-vertical-offset="4695">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -1,1 +1,0 @@
-{"version":3,"file":"/packages/raix:eventemitter.js","sources":["raix:eventemitter/eventemitter.server.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;AAAA,kD","sourcesContent":["EventEmitter = Npm.require('events').EventEmitter;"]}

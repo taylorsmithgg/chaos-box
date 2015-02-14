@@ -1,1 +1,0 @@
-{"version":3,"sources":["ongoworks:bunyan-logger/bunyan.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,Y;AACA,sC;AACA,mD","file":"/packages/ongoworks:bunyan-logger.js","sourcesContent":["logger = {};\nlogger.bunyan = Npm.require('bunyan');\nlogger.bunyanPretty = Npm.require('bunyan-pretty');\n"]}

@@ -48,7 +48,7 @@
     {{#if dropdownVisible}}
       {{! This text is covered by the dropdown, but duplicating it here
           makes the position of "Close" match the position of this text. }}
-      <a class="login-link-text" id="login-sign-in-link"><span data-i18n="accountsUI.signIn">Sign in</span> ▾</a>
+        <a class="login-link-text" id="login-sign-in-link"><span data-i18n="accountsUI.signIn">Wholesale Login</span> ▾</a>
       <div id="login-dropdown-list" class="accounts-dialog">
         <a class="login-close-text" data-i18n="app.close">Close</a>
         {{#if loggingIn}}
@@ -62,7 +62,8 @@
         {{! Not normally visible, but if the user closes the dropdown during login.}}
         {{> _loginButtonsLoggingIn}}
       {{else}}
-        <a class="login-link-text" id="login-sign-in-link"><span data-i18n="accountsUI.signIn">Sign in</span> ▾</a>
+          <a class="login-link-text" id="login-sign-in-link"><span data-i18n="accountsUI.signIn">Wholesale Login</span>
+              ▾</a>
       {{/if}}
     {{/if}}
   </div>
@@ -112,7 +113,7 @@
           <span data-i18n="accountsUI.createAccount">Create an Account</span>
         {{/if}}
         {{#if inLoginFlow}}
-          <span data-i18n="accountsUI.signIn">Sign In</span>
+            <span data-i18n="accountsUI.signIn">Wholesale Login</span>
         {{/if}}
         {{#if inline }}
         {{#if canCheckoutAsGuest}}
@@ -186,7 +187,7 @@
 
 <template name="core_loginButtonsBackToLoginLink">
   <div class="additional-link-container">
-    <a id="back-to-login-link" class="additional-link" data-i18n="accountsUI.signIn">Sign In</a>
+      <a id="back-to-login-link" class="additional-link" data-i18n="accountsUI.signIn">Wholesale Login</a>
   </div>
 </template>
 
