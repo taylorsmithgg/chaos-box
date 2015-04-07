@@ -2,13 +2,13 @@
   "format": "web-program-pre1",
   "manifest": [
     {
-      "path": "2bfaff50f5a34c37a2121ace601c8e668dd5c352.js",
+      "path": "81e6cf0aefee36b4cba32fc6345068b9dcabd709.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/2bfaff50f5a34c37a2121ace601c8e668dd5c352.js",
-      "size": 1935317,
-      "hash": "2bfaff50f5a34c37a2121ace601c8e668dd5c352"
+      "url": "/81e6cf0aefee36b4cba32fc6345068b9dcabd709.js",
+      "size": 1935067,
+      "hash": "81e6cf0aefee36b4cba32fc6345068b9dcabd709"
     },
     {
       "path": "701452bc2051055a8b1732dbc8538e19a8697a75.css",

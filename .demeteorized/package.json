@@ -1,6 +1,6 @@
 {
-  "name": "packages",
-  "description": "packages - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
+  "name": "chaos-box",
+  "description": "chaos-box - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
   "version": "0.0.1",
   "main": "main.js",
   "scripts": {
