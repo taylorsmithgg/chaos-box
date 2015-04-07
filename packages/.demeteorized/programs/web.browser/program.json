@@ -1,0 +1,497 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "2bfaff50f5a34c37a2121ace601c8e668dd5c352.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/2bfaff50f5a34c37a2121ace601c8e668dd5c352.js",
+      "size": 1935317,
+      "hash": "2bfaff50f5a34c37a2121ace601c8e668dd5c352"
+    },
+    {
+      "path": "701452bc2051055a8b1732dbc8538e19a8697a75.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/701452bc2051055a8b1732dbc8538e19a8697a75.css?meteor_css_resource=true",
+      "size": 336044,
+      "hash": "701452bc2051055a8b1732dbc8538e19a8697a75"
+    },
+    {
+      "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3"
+    },
+    {
+      "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "size": 108738,
+      "hash": "de51a8494180a6db074af2dee2383f0a363c5b08"
+    },
+    {
+      "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "44bc1850f570972267b169ae18f1cb06b611ffa2"
+    },
+    {
+      "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f"
+    },
+    {
+      "path": "packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/nemo64_bootstrap-data/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "ca35b697d99cae4d1b60f2d60fcd37771987eb07"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.eot",
+      "size": 56006,
+      "hash": "0183979056f0b87616cd99d5c54a48f3b771eee6"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.svg",
+      "size": 287007,
+      "hash": "cd980eab6db5fa57db670cb2e4278e67e1a4d6c9"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.ttf",
+      "size": 112160,
+      "hash": "6225ccc4ec94d060f19efab97ca42d842845b949"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/fonts/fontawesome-webfont.woff",
+      "size": 65452,
+      "hash": "7d65e0227d0d7cdc1718119cd2a7dce0638f151c"
+    },
+    {
+      "path": "app/favicon.ico",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicon.ico",
+      "size": 1342,
+      "hash": "1f9b34e1a45d48841b3566a44b29a3aa1d2c5d36"
+    },
+    {
+      "path": "app/img/about-sep.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/about-sep.jpg",
+      "size": 307076,
+      "hash": "588eb801d1f6611399408de19cee8bccdd9260e1"
+    },
+    {
+      "path": "app/img/back.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/back.jpg",
+      "size": 541341,
+      "hash": "315a1415596a5f7b5f738a23200f086c89a52c3b"
+    },
+    {
+      "path": "app/img/background.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/background.mp4",
+      "size": 3161217,
+      "hash": "5c5b8cfc3fac59e3e3a6641046b4c7ae643c78fa"
+    },
+    {
+      "path": "app/img/banner.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/banner.jpg",
+      "size": 1112965,
+      "hash": "85aa7c242e1f3268883eadf87c0791b74c7aae07"
+    },
+    {
+      "path": "app/img/bluemonkeyvapes.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/bluemonkeyvapes.jpg",
+      "size": 51956,
+      "hash": "1aaea5d295bfb60101f481edfb59e25f18d83cfb"
+    },
+    {
+      "path": "app/img/bluewhite.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/bluewhite.jpg",
+      "size": 53071,
+      "hash": "2a2973f2724330bbcb97533ed4f0287ff0931b76"
+    },
+    {
+      "path": "app/img/chaos.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/chaos.png",
+      "size": 3304895,
+      "hash": "1e5f521ed1b46bd4bd32717dbb40453ae60070a7"
+    },
+    {
+      "path": "app/img/chaosbox.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/chaosbox.jpg",
+      "size": 44659,
+      "hash": "d52b9882582de10d5f7a56c8342d93d2c115e70a"
+    },
+    {
+      "path": "app/img/chasethevape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/chasethevape.png",
+      "size": 74439,
+      "hash": "0e9d8167dec4c4856ad90cbf44f359e3ce003e22"
+    },
+    {
+      "path": "app/img/contact-sep.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/contact-sep.jpg",
+      "size": 462505,
+      "hash": "024311ac221f80d2ff0d02e981f9981f40ee61d1"
+    },
+    {
+      "path": "app/img/coolvapes.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/coolvapes.jpg",
+      "size": 18005,
+      "hash": "1903ad25245fd85abef3826b59ce4fb88b1f47f7"
+    },
+    {
+      "path": "app/img/ipad.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/ipad.png",
+      "size": 69399,
+      "hash": "920afb293234611713a9142ad5a140b7e35fd21b"
+    },
+    {
+      "path": "app/img/magnoliavapes.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/magnoliavapes.png",
+      "size": 254332,
+      "hash": "affd1fcfd4689b64a47e62f9276e7def1739f44d"
+    },
+    {
+      "path": "app/img/msvapors.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/msvapors.png",
+      "size": 63180,
+      "hash": "0dce8d67c2cd18d9377099674a91747bae5635df"
+    },
+    {
+      "path": "app/img/name-label.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/name-label.png",
+      "size": 12677,
+      "hash": "46e6ee1c9f1c4ce5e15bf4f0cd84389900ea3bc6"
+    },
+    {
+      "path": "app/img/name-zig.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/name-zig.png",
+      "size": 483,
+      "hash": "5ca0238df7a00ef91c73f9e58ea1c51f31a565cd"
+    },
+    {
+      "path": "app/img/nashvillevapor.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/nashvillevapor.jpg",
+      "size": 87921,
+      "hash": "6ef013234503e78a3756c2b9d720b2d6f20897a0"
+    },
+    {
+      "path": "app/img/pic-t1.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/pic-t1.jpg",
+      "size": 36450,
+      "hash": "f70926bd329ca9d386a7b493bd0a51672102a719"
+    },
+    {
+      "path": "app/img/pic-t2.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/pic-t2.jpg",
+      "size": 27307,
+      "hash": "f50146b37f34112df5ee987e3158ac1fcb466a1d"
+    },
+    {
+      "path": "app/img/pic-t3.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/pic-t3.jpg",
+      "size": 43755,
+      "hash": "e77d9ab4646a2b7a180261383758e10fe40e851e"
+    },
+    {
+      "path": "app/img/pic.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/pic.png",
+      "size": 67637,
+      "hash": "4f4368010b2e5eecd328f62896f0fa00418b2804"
+    },
+    {
+      "path": "app/img/portfolio-sep.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio-sep.jpg",
+      "size": 376333,
+      "hash": "5aafe6544ab27da49a71cac2b3e1b4901666e2b9"
+    },
+    {
+      "path": "app/img/preciousvapes.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/preciousvapes.png",
+      "size": 313145,
+      "hash": "ee0f36e71cdeb13ac4a66af39a17695877335b8e"
+    },
+    {
+      "path": "app/img/promo.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/promo.jpg",
+      "size": 28878,
+      "hash": "c961807cd7f166089cf1869fa9120d41ed85cb9e"
+    },
+    {
+      "path": "app/img/redyellow.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/redyellow.jpg",
+      "size": 66394,
+      "hash": "2a6d2b62f52bce92c685638b64162fe220bc4fc1"
+    },
+    {
+      "path": "app/img/screenshot.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/screenshot.png",
+      "size": 184735,
+      "hash": "7e90151efe1b693e280fde290348f980a35469c5"
+    },
+    {
+      "path": "app/img/spread.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/spread.jpg",
+      "size": 97215,
+      "hash": "6e7a8e9ca9b68b67e632e434c73268695647248b"
+    },
+    {
+      "path": "app/img/symbol.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/symbol.png",
+      "size": 85682,
+      "hash": "46b432ecc7b9d3ce8673cc1d51e23d445c3f123f"
+    },
+    {
+      "path": "app/img/tobaccovape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/tobaccovape.png",
+      "size": 187857,
+      "hash": "826d4e58fb99fd58c0b142413e7642b7e20b8b19"
+    },
+    {
+      "path": "app/img/vapeescape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/vapeescape.png",
+      "size": 43938,
+      "hash": "2fe98f18ae074ddb0c9d7f799a47db92407a1ba0"
+    },
+    {
+      "path": "app/img/vaporwize.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/vaporwize.png",
+      "size": 65978,
+      "hash": "e5bd8cc5f46eb2a521d8ab867e8c84fe0851788f"
+    },
+    {
+      "path": "app/img/wolfrivervapor.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/wolfrivervapor.jpg",
+      "size": 154558,
+      "hash": "bb39179c4c53dfa7cd7ce26ca49c8c0393ff29a1"
+    },
+    {
+      "path": "app/img/zooks.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/zooks.jpg",
+      "size": 8998,
+      "hash": "12ebd4b2db3d108a538e6b6a9f87e988686bd1da"
+    },
+    {
+      "path": "app/img/zoom.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/zoom.png",
+      "size": 4151,
+      "hash": "509d13b16e61cee4c16d871e0dd90df283055dba"
+    },
+    {
+      "path": "app/resources/avatar.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/avatar.gif",
+      "size": 1218,
+      "hash": "6a6bcaafb26ced7079aee4e74fc61bb5aa01f535"
+    },
+    {
+      "path": "app/resources/placeholder.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/placeholder.gif",
+      "size": 4677,
+      "hash": "3796a928acaa1d01e18d704082cf326111808d06"
+    },
+    {
+      "path": "app/img/portfolio/port01.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio/port01.jpg",
+      "size": 100653,
+      "hash": "8124e93812b685cd25c01e176db1408a813e25bf"
+    },
+    {
+      "path": "app/img/portfolio/port02.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio/port02.jpg",
+      "size": 136947,
+      "hash": "c80133e01c7f69e8e5e84885d874407e55d6a60b"
+    },
+    {
+      "path": "app/img/portfolio/port03.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio/port03.jpg",
+      "size": 87401,
+      "hash": "ccb30a12d835aa3a1c5d52ff2ba9dba812864894"
+    },
+    {
+      "path": "app/img/portfolio/port04.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio/port04.jpg",
+      "size": 63429,
+      "hash": "dfe8332127363d502c9c46509a25857b1e391592"
+    },
+    {
+      "path": "app/img/portfolio/port05.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio/port05.jpg",
+      "size": 93649,
+      "hash": "3a38b57d9c46a823f84a2184cdfd10a141ba09d9"
+    },
+    {
+      "path": "app/img/portfolio/port06.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/portfolio/port06.jpg",
+      "size": 148199,
+      "hash": "3431b06b73ce9d52dd0734144f5f74ed12be4cf6"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "037ae262c989e9d56b368db61bddbab43e5a8932"
+    }
+  ]
+}
