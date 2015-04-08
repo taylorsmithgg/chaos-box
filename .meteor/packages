@@ -12,7 +12,6 @@ less
 # Optional Meteor Packages
 accounts-facebook
 spiderable
-force-ssl
 
 # Community Packages
 nemo64:bootstrap
@@ -31,4 +30,6 @@ cryptoquick:jade
 houston:admin
 noorderstorm:stellar
 reactioncommerce:reaction-auth-net
+fortawesome:fontawesome
 reactioncommerce:reaction-shipping
+force-ssl
